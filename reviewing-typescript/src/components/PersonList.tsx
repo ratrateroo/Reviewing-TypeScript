@@ -1,3 +1,5 @@
+//using array of object type
+
 type PersonsListProps = {
   names: {
     first: string;

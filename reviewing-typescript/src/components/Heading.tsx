@@ -1,3 +1,5 @@
+//using string types for children prop
+
 type HeadingProps = {
   children: string;
 };

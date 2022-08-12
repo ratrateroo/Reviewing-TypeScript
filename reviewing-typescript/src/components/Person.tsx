@@ -1,3 +1,5 @@
+//using object type
+
 type PersonProps = {
   name: {
     first: string;

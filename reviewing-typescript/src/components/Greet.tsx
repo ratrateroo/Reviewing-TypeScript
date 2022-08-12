@@ -1,3 +1,5 @@
+//using string, number and boolean types
+
 type Greet = {
   name: string;
   messageCount: number;
