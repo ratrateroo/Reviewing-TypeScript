@@ -1,6 +1,6 @@
 //using React.MouseEvent as type for the event passed to the handleClick function prop
 //to be specific HTMLButtonElement is used
-//additional props can be added like id
+//additional parameter can be added like id
 import React from "react";
 
 type ButtonProps = {
