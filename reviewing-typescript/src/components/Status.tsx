@@ -1,3 +1,5 @@
+//using union type literals
+//status prop can only have "loading", "success" or "error" value
 type StatusProps = {
   status: "loading" | "success" | "error";
 };
