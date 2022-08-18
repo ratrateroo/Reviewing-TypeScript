@@ -12,6 +12,9 @@ import { Input } from "./components/Input";
 import { Container } from "./components/Container";
 import { ThemeContextProvider } from "./components/context/ThemeContext";
 import { Box } from "./components/context/Box";
+import { UserContextProvider } from "./components/context/UserContext";
+import { DomRef } from "./components/ref/DomRef";
+import { Counter } from "./components/class/Counter";
 
 function App() {
   const personName = {
@@ -58,6 +61,11 @@ function App() {
       <ThemeContextProvider>
         <Box />
       </ThemeContextProvider>
+      <UserContextProvider>
+        <Box />
+      </UserContextProvider>
+      <DomRef />
+      <Counter message="The value of count is: " />
     </div>
   );
 }
