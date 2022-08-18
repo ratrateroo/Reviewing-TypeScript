@@ -15,6 +15,8 @@ import { Box } from "./components/context/Box";
 import { UserContextProvider } from "./components/context/UserContext";
 import { DomRef } from "./components/ref/DomRef";
 import { Counter } from "./components/class/Counter";
+import { Private } from "./components/auth/Private";
+import { Profile } from "./components/auth/Profile";
 
 function App() {
   const personName = {
@@ -66,6 +68,8 @@ function App() {
       </UserContextProvider>
       <DomRef />
       <Counter message="The value of count is: " />
+
+      <Private isLoggedIn={true} component={Profile} />
     </div>
   );
 }
