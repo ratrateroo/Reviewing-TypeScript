@@ -10,6 +10,8 @@ import { Oscar } from "./components/Oscar";
 import { Button } from "./components/Button";
 import { Input } from "./components/Input";
 import { Container } from "./components/Container";
+import { ThemeContextProvider } from "./components/context/ThemeContext";
+import { Box } from "./components/context/Box";
 
 function App() {
   const personName = {
@@ -52,6 +54,10 @@ function App() {
       <Container styles={{ border: "1px solid black", padding: "1rem" }} />
 
       <Input value="" handleChange={(event) => console.log(event)} />
+
+      <ThemeContextProvider>
+        <Box />
+      </ThemeContextProvider>
     </div>
   );
 }
