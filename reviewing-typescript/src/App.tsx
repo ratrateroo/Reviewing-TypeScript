@@ -18,6 +18,8 @@ import { Counter } from "./components/class/Counter";
 import { Private } from "./components/auth/Private";
 import { Profile } from "./components/auth/Profile";
 import { List } from "./components/generics/List";
+import { CustomButton } from "./components/html/Button";
+import { RandomNumber } from "./components/restriction/RandomNumber";
 
 function App() {
   const personName = {
@@ -97,6 +99,10 @@ function App() {
         ]}
         onClick={(item) => console.log(item)}
       />
+      <RandomNumber value={10} isPositive />
+      <CustomButton variant="primary" onClick={() => console.log("Clicked")}>
+        Button Label
+      </CustomButton>
     </div>
   );
 }
