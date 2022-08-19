@@ -17,6 +17,7 @@ import { DomRef } from "./components/ref/DomRef";
 import { Counter } from "./components/class/Counter";
 import { Private } from "./components/auth/Private";
 import { Profile } from "./components/auth/Profile";
+import { List } from "./components/generics/List";
 
 function App() {
   const personName = {
@@ -70,6 +71,32 @@ function App() {
       <Counter message="The value of count is: " />
 
       <Private isLoggedIn={true} component={Profile} />
+
+      {/* <List
+        items={['Batman', 'Superman', 'Wonder Woman']}
+        onClick={item => console.log(item)}
+      />
+      <List items={[1, 2, 3]} onClick={item => console.log(item)} /> */}
+      <List
+        items={[
+          {
+            id: 1,
+            first: "Bruce",
+            last: "Wayne",
+          },
+          {
+            id: 2,
+            first: "Clark",
+            last: "Kent",
+          },
+          {
+            id: 3,
+            first: "Princess",
+            last: "Diana",
+          },
+        ]}
+        onClick={(item) => console.log(item)}
+      />
     </div>
   );
 }
